@@ -23,6 +23,12 @@ M.general = {
     ["<C-j>"] = { "<C-w>j", "Window down" },
     ["<C-k>"] = { "<C-w>k", "Window up" },
 
+    -- Resize with Arrows
+    ["<S-Up>"] = { ":resize -2<CR>", "Resize Up" },
+    ["<S-Down>"] = { ":resize +2<CR>", "Resize Down" },
+    ["<S-Left>"] = { ":vertical resize -2<CR>", "Resize Left" },
+    ["<S-Left>"] = { ":vertical resize +2<CR>", "Resize Right"},
+
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
 
@@ -256,10 +262,7 @@ M.nvimtree = {
 
   n = {
     -- toggle
-    ["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
-
-    -- focus
-    ["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+    ["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
   },
 }
 
