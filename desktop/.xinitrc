@@ -6,4 +6,5 @@ xrandr --output "HDMI-1-0" --right-of "DP-0" --mode 1920x1080
 feh --bg-scale "$HOME/.config/noss/wallpapers/firewatch.png"
 
 picom &
+dunst &
 exec dwm
