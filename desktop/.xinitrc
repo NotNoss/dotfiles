@@ -7,5 +7,5 @@ feh --bg-scale "$HOME/.config/noss/wallpapers/firewatch.png"
 
 picom &
 dunst &
-dwmblocks &
+slstatus &
 exec dwm

@@ -8,4 +8,4 @@ configuration {
   icon-theme: "Oranchelo";
 }
 
-@theme "./themes/catppuccin-macchiato.rasi"
+@theme "./themes/catppuccin-frappe.rasi"

@@ -104,3 +104,4 @@ source $ZSH/oh-my-zsh.sh
 pokemon-colorscripts --name gengar
 
 eval $(thefuck --alias)
+export PATH=$PATH:/home/noss/.spicetify
