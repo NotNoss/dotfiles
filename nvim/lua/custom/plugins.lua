@@ -47,7 +47,8 @@ local plugins = {
     opts = {
       ensure_installed = {
         "clangd",
-        "codelldb"
+        "codelldb",
+        "bash-language-server"
       }
     }
   }
