@@ -3,7 +3,7 @@ configuration {
   display-window: "Windows";
   display-ssh: "Session History";
   drun-display-format: "{icon} {name}";
-  modi: "window,drun,ssh";
+  modi: "window,drun,ssh,emoji,calc";
   show-icons: true;
   icon-theme: "Oranchelo";
 }

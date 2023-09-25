@@ -1,0 +1,11 @@
+#! /bin/sh
+
+chosen=$(printf "  Power Off\n  Restart\n  Log Out\n  Lock" | rofi -dmenu -i -theme-str '@import "~/.config/rofi/themes/catppuccin-frappe.rasi"')
+
+case "$chosen" in
+	"  Power Off") poweroff ;;
+	"  Restart") reboot ;;
+	"  Log Out") pkill -KILL -u $USER ;;
+	"  Lock") slock ;;
+	*) exit 1 ;;
+esac
