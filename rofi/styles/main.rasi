@@ -18,7 +18,7 @@ mainbox {
 
 inputbar {
     padding:                     10%;
-    background-image:            url("~/.config/noss/dotfiles/wallpapers/skyline.jpg", width);
+    background-image:            url("~/.config/noss/dotfiles/wallpapers/gengar.jpg", both);
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 
