@@ -3,8 +3,8 @@
 chosen=$(printf "  Power Off\n  Restart\n󰍃  Log Out\n  Lock" | rofi -dmenu -i -theme-str '@import "~/.config/rofi/themes/catppuccin-frappe-power.rasi"')
 
 case "$chosen" in
-	"  Power Off") poweroff ;;
-	"  Restart") reboot ;;
+	"  Power Off") sudo poweroff ;;
+	"  Restart") sudo reboot ;;
 	"󰍃  Log Out") pkill -KILL -u $USER ;;
 	"  Lock") slock ;;
 	*) exit 1 ;;

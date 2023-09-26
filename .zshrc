@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias poweroff="sudo poweroff"
+alias reboot="sudo reboot"
 
 pokemon-colorscripts --name gengar
 
