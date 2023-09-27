@@ -77,7 +77,7 @@ static const char *roficalccmd[]  = { "rofi", "-show", "calc", NULL };
 static const char *rofipwrcmd[]  = { "power-menu", NULL };
 static const char *rofiwificmd[]  = { "wifi-menu", NULL };
 static const char *rofibtcmd[]  = { "bt-menu", NULL };
-static const char *rofijerrycmd[]  = { "anime", NULL };
+static const char *rofijerrycmd[]  = { "jerry", NULL };
 static const char *rofilobstercmd[]  = { "lobster", "--rofi", "--dmenu", "--external-menu", NULL };
 
 static const Key keys[] = {
