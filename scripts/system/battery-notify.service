@@ -1,0 +1,13 @@
+[Unit]
+Description=Battery Notifications
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/battery-notify
+RemainAfterExit=true
+ExecStop=/usr/local/sbin/battery-notify
+TimeoutStopSec=infinity
+
+[Install]
+WantedBy=multi-user.target
