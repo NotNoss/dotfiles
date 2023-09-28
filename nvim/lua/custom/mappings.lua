@@ -14,4 +14,15 @@ M.dap = {
   }
 }
 
+M.crates = {
+  n = {
+    ["<leader>rcu"] = {
+      function()
+        require('crates').upgrade_all_crates()
+      end,
+      "upgrade crates"
+    }
+  }
+}
+
 return M
