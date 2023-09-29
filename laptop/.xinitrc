@@ -1,6 +1,6 @@
 xrandr --output "eDP-1" --mode 1920x1080
 
-feh --bg-scale ~/.config/noss/dotfiles/wallpapers/gengar.jpg
+feh --bg-scale ~/.config/dotfiles/wallpapers/gengar.jpg
 
 rfkill unblock wlan
 
