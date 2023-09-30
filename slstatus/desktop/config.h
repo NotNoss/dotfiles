@@ -67,12 +67,10 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ netspeed_rx, " 󰇚%s", "enp5s0" },
 	{ netspeed_tx, " 󰕒%s", "enp5s0" },
-	/*{ wifi_essid, " 󰖩 %s", "wlan0"},*/
-	/*{ battery_perc, " 󰂁 %s", "BAT0"},*/
 	{ temp, "  %s", "/sys/class/thermal/thermal_zone0/temp"},
 	{ cpu_perc, " 󰻠 %s", NULL },
 	{ ram_perc, "  %s", NULL},
-	{ run_command, " %s", "~/.local/bin/statusbar/volume"},
+	{ run_command, " %s", "~/.local/bin/scripts/volume"},
 	{ disk_perc, "  %s", "/"},
 	{ kernel_release, "  %s", NULL },
 	{ datetime, "  %s", "%a %d %B  %I:%M %p"},
