@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "andweeb/presence.nvim",
+    lazy = false,
+  },
+  {
     "hrsh7th/nvim-cmp",
     opts = function()
       local M = require "plugins.configs.cmp"
