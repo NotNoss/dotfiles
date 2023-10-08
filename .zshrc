@@ -4,6 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin/scripts:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR="vim"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
+alias ssh="kitty +kitten ssh"
 
 pokemon-colorscripts --name gengar
 
