@@ -79,6 +79,7 @@ static const char *rofiwificmd[]  = { "wifi-menu", NULL };
 static const char *rofibtcmd[]  = { "bt-menu", NULL };
 static const char *rofijerrycmd[]  = { "jerry", "--rofi", "--dmenu", "--external-menu", NULL };
 static const char *rofilobstercmd[]  = { "lobster", "--rofi", "--dmenu", "--external-menu", NULL };
+static const char *flameshotcmd[]  = { "flameshot", "gui", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -92,6 +93,7 @@ static const Key keys[] = {
   { MODKEY|ControlMask,           XK_b,      spawn,          {.v = rofibtcmd} },
   { MODKEY|ControlMask,           XK_j,      spawn,          {.v = rofijerrycmd} },
   { MODKEY|ControlMask,           XK_l,      spawn,          {.v = rofilobstercmd} },
+  { MODKEY|Mod1Mask,              XK_s,      spawn,          {.v = flameshotcmd} },
 	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },

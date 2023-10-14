@@ -121,7 +121,11 @@ local plugins = {
         "clangd",
         "codelldb",
         "bash-language-server",
-        "rust-analyzer"
+        "rust-analyzer",
+        "html-lsp",
+        "css-lsp",
+        "typescript-language-server",
+        "json-lsp"
       }
     }
   }
