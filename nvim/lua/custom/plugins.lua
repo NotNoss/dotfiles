@@ -1,5 +1,19 @@
 local plugins = {
   {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup({
+        async_api_key_cmd = "pass show chatgpt/api-key"
+      })
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+  },
+  {
     "olexsmir/gopher.nvim",
     ft = "go",
     config = function(_, opts)
