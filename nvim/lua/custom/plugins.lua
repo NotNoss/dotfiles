@@ -1,17 +1,40 @@
 local plugins = {
   {
-    "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("chatgpt").setup({
-        async_api_key_cmd = "pass show chatgpt/api-key"
-      })
-    end,
+    "NotNoss/dev-tunnels.nvim",
     dependencies = {
       "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim"
     }
+  },
+  {
+    "zbirenbaum/copilot.lua",
+    enabled = true,
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require('copilot').setup({
+        suggestion = {
+          enabled = true,
+          auto_trigger = true,
+          keymap = {
+            accept = "<C-l>",
+          }
+        }
+      })
+    end,
+  },
+  {
+   "jackMort/ChatGPT.nvim",
+   event = "VeryLazy",
+   config = function()
+     require("chatgpt").setup({
+       api_key_cmd = "pass show chatgpt/api-key"
+     })
+   end,
+   dependencies = {
+     "MunifTanjim/nui.nvim",
+     "nvim-lua/plenary.nvim",
+     "nvim-telescope/telescope.nvim"
+   }
   },
   {
     "olexsmir/gopher.nvim",
