@@ -1,11 +1,5 @@
 local plugins = {
   {
-    "NotNoss/dev-tunnels.nvim",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-    }
-  },
-  {
     "zbirenbaum/copilot.lua",
     enabled = true,
     cmd = "Copilot",
